@@ -24,7 +24,7 @@ app.controller('HomeCtrl', function($scope, $http){
             });
 
 
-            $http.post("https://api.github.com/repos/luisdlino/Lista-de-Issues/issues?access_token=4a78743d975fa0210f46282d70b1a927b41ec484", dataObj)
+            $http.post("https://api.github.com/repos/luisdlino/Lista-de-Issues/issues?access_token=5507a62fce8eff3c16019476e73af4fe772094ef", dataObj)
             .success(function () {
                 update(vm.data.length);      
                 document.getElementById('formCriarIssue').style.display = 'none'; 
