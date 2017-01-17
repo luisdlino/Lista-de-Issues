@@ -1,0 +1,184 @@
+@import 'variables';
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: $cor-preto;
+}
+
+a {
+	cursor: pointer;
+}
+
+
+.menu {
+	background-color: $background-cinza;
+	box-shadow: 0px -3px 14px 0px;
+	min-height: 70px;
+	padding: 15px;
+	font-size: 28px;
+
+	.form-inline {
+		.form-group, .form-control{
+			display: inline-block!important;
+		    margin-bottom: 0!important;
+		    vertical-align: middle!important;
+		    width: auto;
+		}
+	}
+
+}
+
+.conteudo {
+
+	.container {
+		height: 100%;
+		background-color: $background-branco;
+	    position: relative;
+	    padding-bottom: 40px;
+	}
+}
+
+.logo {
+	margin-bottom: 8px;
+}
+
+.criarIssue {
+	margin-top: 12px;
+}
+
+.glyphicon {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.inputEditIssue {
+	margin-bottom: 5px;
+}
+
+.btnEditIssue {
+	margin-right: 5px;
+}
+
+.issue {
+    padding: 12px 10px;
+    background-color: #F2F8FA;
+    border: 1px solid #BFCCD1;
+    border-radius: 3px;
+    margin-bottom: 12px;
+
+    .btns {
+    	height: 60px;
+    	padding: 10px;
+    }
+
+    .locked {
+    	display: none;
+    }
+}
+
+#formCriarIssue {
+	display: none;
+}
+
+.editIssueForm {
+	display: none;
+}
+
+.comentario {
+	padding: 10px;
+    background-color: #fff;
+    border: 1px solid #BFCCD1;
+    border-radius: 3px;
+    margin-top: 5px;
+    display: none;
+}
+
+.openComentario:hover {
+	text-decoration: none;
+}
+
+.overlay {
+    background: #737373;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 999;
+	.loader {
+	  position: absolute;
+	  top: 20px;
+	  left: 50%;		
+	  border: 16px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 16px solid #333333;
+	  width: 100px;
+	  height: 100px;
+	  -webkit-animation: spin 1s linear infinite;
+	  animation: spin 1s linear infinite;
+	}
+
+	@-webkit-keyframes spin {
+	  0% { -webkit-transform: rotate(0deg); }
+	  100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+	  0% { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
+	}
+}
+
+.labels {
+
+	margin-bottom: 5px;
+
+	span {
+		padding: 3px 5px;
+    	border-radius: 10px;
+    	margin-right: 5px;
+
+		&.bug {
+			background: #EE0701;
+		}
+
+		&.duplicate {
+			background: #CCCCCC;
+		}
+
+		&.enhancement {
+			background: #84B6EB;
+		}
+
+		&.help.wanted {
+			background: #128A0C;
+		}
+
+		&.invalid {
+			background: #E6E6E6;
+		}
+
+		&.question {
+			background: #CC317C;
+		}
+
+		&.wontfix {
+			background: #FFFFFF;
+		}
+
+	}
+}
+
+input.invalid{
+	border-color: #ff0000;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.11), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+
+
+
