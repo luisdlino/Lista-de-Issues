@@ -104,11 +104,7 @@ app.controller('HomeCtrl', function($scope, $http){
             }
             else {
                 update(numeroIssues);
-            }
-                     
+            }          
         })      
-
- 
     }  
-
 });
